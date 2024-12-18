@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sliding Images with JavaScript</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link
+  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+
+<header>
+
+        <nav>
+
+            <div class="logo">Crumbs & Coffee</div>
+
+            <ul>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#menu">Menu</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li><a href="myaccount.html">My Account</a></li>
+                
+                <li><a href="Locations.html">Locations</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+                
+                <li><a href="reviews.html">Read Our Reviews</a></li>
+               
+                <li><a href="Gallery.html">Gallery</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+<br>
+<h2>
+Explore the wonders of Crumbs&Coffee by flicking through some of our very own pictures
+</h2>
+<div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="picture1.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture2.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture3.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture4.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture5.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture6.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture7.jpg" alt=image 1></div>
+    <div class="swiper-slide"><img src="picture8.jpg" alt=image 1></div>
+   
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination">
+</div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+</body>
+</html>

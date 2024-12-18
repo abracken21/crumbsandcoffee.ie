@@ -1,0 +1,12 @@
+let currentIndex = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+
+    // Update current index
+    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+
+    // Move the slides container
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
